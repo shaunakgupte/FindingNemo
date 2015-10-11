@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbarBackground">#ff263238</color>
+    <color name="actionbarBackgroundGradientEnd">#ff263238</color>
+    <color name="activityBackground">#ffdddddd</color>
+    <color name="buttonRed">#ffff0000</color>
+    <color name="buttonGreen">#ff00ff00</color>
+    <color name="buttonBlue">#ff0000ff</color>
+    <color name="buttonDefault">#ff009688</color>
+    <color name="buttonDefaultPressed">#ff007368</color>
+    <color name="cardTitle">#ff009688</color>
+    <color name="cardText">#ff757575</color>
+    <color name="hintText">#ffb9b9b9</color>
+    <color name="imageBackground">#ffeeeeee</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent">#33ffffff</color>
+    <color name="black_transparent">#33000000</color>
+</resources>

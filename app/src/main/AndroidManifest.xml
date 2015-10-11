@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.FindingNemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <permission
+        android:name="com.example.FindingNemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.FindingNemo.permission.MAPS_RECEIVE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAgqwEasaV-w8GqtmW94p3x_pMkdtGirm4"/>-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCOtneY4KWkJqdkpWz28SHP-ZrLLOn3xro"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.FindingNemo.MainActivity"
+            android:label="Finding Nemo - Camera"
+            android:theme="@style/AppTheme"
+            android:icon="@drawable/ic_launcher1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.FindingNemo.LaunchCameraActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:icon="@drawable/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.FindingNemo.FailedListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name="com.example.FindingNemo.MapsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".ImageUploadActivity"/>
+        <activity
+            android:name=".ImageUploadActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>

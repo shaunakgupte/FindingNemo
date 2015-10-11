@@ -1,0 +1,100 @@
+<!--
+  ~ Copyright 2015 Shaunak Gupte <gupte.shaunak@gmail.com>
+  ~
+  ~ This file is part of Finding Nemo.
+  ~
+  ~ Finding Nemo is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Finding Nemo is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Finding Nemo. If not, see <http://www.gnu.org/licenses/>.
+  -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/BackgroundLayout"
+        tools:context="com.example.FindingNemo.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Card">
+                <TextView
+                    android:text="@string/header_upload_photo"
+                    style="@style/CardTitle" />
+                <Button
+                    style="@style/CardButton"
+                    android:text="@string/butCamera"
+                    android:onClick="getPicFromCamera"/>
+                <Button
+                    style="@style/CardButton"
+                    android:text="@string/butGallery"
+                    android:onClick="getPicFromGallery"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Card">
+                <TextView
+                    android:text="@string/header_retry_failed"
+                    style="@style/CardTitle" />
+                <TextView
+                    style="@style/CardText"
+                    android:id="@+id/tvFailedUpload"/>
+                <Button
+                    style="@style/CardButton"
+                    android:id="@+id/bRetry"
+                    android:text="@string/butRetry"
+                    android:onClick="retryFailed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Card"
+                tools:ignore="UnusedAttribute">
+                <TextView
+                    android:text="@string/header_about"
+                    style="@style/CardTitle" />
+                <TextView
+                    android:text="@string/textAbout"
+                    style="@style/CardText"/>
+                <Button
+                    style="@style/CardButton"
+                    android:text="@string/butWebsite"
+                    android:onClick="goToWebsite"/>
+                <Button
+                    style="@style/CardButton"
+                    android:text="@string/butEmail"
+                    android:onClick="emailDeveloper"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

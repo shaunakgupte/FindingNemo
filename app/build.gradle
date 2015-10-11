@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'playstore'
+            keyPassword 'dr!ft3r1'
+            storeFile file('/home/shaunak/AndroidstudioProjects/imageupload/signed.jks')
+            storePassword 'dr!ft3r1'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "com.example.imageupload"
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+dependencies {
+    /*compile 'com.google.http-client:google-http-client-android:1.20.0'
+        compile 'com.google.http-client:google-http-client:1.20.0'
+        compile 'com.google.oauth-client:google-oauth-client:1.20.0'
+        compile group: 'com.google.guava', name: 'guava', version: '12.0'
+        compile 'com.google.api.client:google-api-client-javanet:1.2.3-alpha'
+        compile ('com.google.api-client:google-api-client:1.18.0-rc') {
+
+            exclude (group: 'xpp3', module: 'xpp3') //by both name and group
+            exclude (group: 'org.apache.httpcomponents', module: 'httpclient') //by both name and group
+            exclude (group: 'junit', module: 'junit') //by both name and group
+            exclude (group: 'com.google.android', module: 'android') //by both name and group
+        }
+        compile 'com.google.gdata:core:1.47.1'
+        compile (group: 'com.google.api-client', name: 'google-api-client-android', version: '1.16.0-rc') {
+            exclude (group: 'com.google.android.google-play-services', module: 'google-play-services')
+        }*/
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.google.android.gms:play-services:+'
+    compile 'com.android.support:appcompat-v7:+'
+    //compile files('libs/google-play-services.jar')
+    compile files('libs/android-async-http-1.4.6.jar')
+    /*compile files('libs/google-api-client-googleapis-1.4.1-beta.jar')*/
+}

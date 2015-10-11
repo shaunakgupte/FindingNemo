@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common Strings -->
+    <string name="app_name">Finding Nemo</string>
+    <string name="website">http://google.com</string>
+    <string name="developer_name">Shaunak Gupte</string>
+    <string name="developer_email">gupte.shaunak@gmail.com</string>
+
+    <!--Main Activity Strings-->
+    <string name="failed_upload_one">1 failed upload</string>
+    <string name="failed_upload_none">No failed uploads</string>
+    <string name="failed_uploads_many">%d failed uploads</string>
+    <string name="header_upload_photo">Upload a Photo</string>
+    <string name="header_retry_failed">Retry failed uploads</string>
+    <string name="header_about">About</string>
+    <string name="butWebsite">Go to Website</string>
+    <string name="butEmail">Email Developer</string>
+    <string name="butRetry">Retry</string>
+    <string name="butCamera">From Camera</string>
+    <string name="butGallery">From Gallery</string>
+    <string name="textAbout">About</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="drawer_open">Open Drawer</string>
+
+    <!-- Image Upload Activity Strings -->
+    <string name="upload_successful_message">Upload Successful. Thank you for helping out!</string>
+    <string name="upload_fail_message_try">Upload Failed. Try again?</string>
+    <string name="upload_fail_message_later">Upload Failed. Too many failed uploads. Please try again after some time.</string>
+    <string name="button_change">Change</string>
+    <string name="butUpload">Upload</string>
+    <string name="header_photo">Photo</string>
+    <string name="header_location">Location</string>
+    <string name="header_date_time">Date and Time</string>
+    <string name="header_comments">Comments</string>
+    <string name="content_description_upload">Photo selected for upload</string>
+    <string name="text_date">Date:</string>
+    <string name="text_time">Time:</string>
+    <string name="text_hint_comments">Type your comments here</string>
+
+    <!-- Photo Helper Strings -->
+
+    <!-- Location Helper Strings -->
+    <string name="dialog_enable_gps">Please enable GPS for more accurate location!</string>
+    <string name="dialog_enable_gps_again">GPS still not enabled. Try again?</string>
+    <string name="toast_no_gps">GPS not enabled. Locations will not be accurate</string>
+
+    <!-- ImageUploader Strings -->
+    <string name="auth_string">DQAAANQAAAAp_4BXD9UnlraETTodI6RoRUlg4CDDbWsMkZqixln9aeiAorsgHwpcEpDBrnaUZQIitjbNfqCAFxVqXfEv-iogB2MgFO6bIzwZ6mDJRU4wYsHJDuWLJiD0GqjhZedefRAtvg15UBpVF8ICzkgWF20_WRuKxBvsJnTgpqcoDAHOnkKYBhVI08FsXkkQX1GMfBtFgcAtXMV_pR2509vMGXdxGXG-IigSttTbyzbwXPl9zwoSksczDgMvyB5hIRdukn408KjToU08uF1FgDBipqjSDg6afpnbpEZ_mXj0n--wvQ</string>
+    <string name="dialog_image_upload_title">Uploading Image</string>
+    <string name="dialog_image_upload_message">Please wait ...</string>
+
+    <!-- FailedListActivity Strings -->
+    <string name="butDelete">Delete</string>
+    <string name="butRetryFailed">Retry</string>
+    <string name="butEdit">Edit</string>
+    <string name="textComment">Comments:</string>
+    <string name="textTakenAt">Taken At:</string>
+    <string name="textTakenOn">Taken On:</string>
+    <string name="dialog_delete">Are you sure you want to delete?</string>
+
+    <!-- Other Strings -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Sidebar Items -->
+    <string-array name="menuItems">
+        <item>Welcome %s!</item>
+        <item>Take a Snap</item>
+        <item>Upload from Gallery</item>
+        <item>Retry failed uploads (%d)</item>
+        <item>About</item>
+    </string-array>
+
+    <integer-array name="menuIcons">
+        <item>0</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+    </integer-array>
+
+    <string name="app_description">Finding Nemo is a non political, non profit making and a non-government organization.\n\nIf you find a child beggar by road side or any where else just take a snap and upload it. This small step can help some parents to meet their lost child and you will get eternal satisfaction as a human being.\n\nContact us for our mission and more details.</string>
+
+</resources>
